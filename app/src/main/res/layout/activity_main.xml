@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/color_button"
+            android:text="search"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:backgroundTint="#B2B3F1"/>
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Search Your Topic"
+            android:textColor="@color/black"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/linear_layout"/>
+
+    <Button
+        android:id="@+id/load_more_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:text="load more"
+        android:layout_alignParentBottom="true"
+        android:background="#B2B3F1"
+        app:backgroundTint="#B2B3F1"/>
+
+</RelativeLayout>
